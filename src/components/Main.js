@@ -1,7 +1,7 @@
 import React from "react";
 import mainImg from "../icons_assets/bruchetta.svg";
 import GreekSalad from '../icons_assets/greek salad.jpg';
-import Card from "Card.js";
+import Card from "./Card.js";
 
 
 function Main(){
