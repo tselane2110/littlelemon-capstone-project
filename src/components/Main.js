@@ -2,6 +2,7 @@ import React from "react";
 import mainImg from "../icons_assets/bruchetta.svg";
 import GreekSalad from '../icons_assets/greek salad.jpg';
 import Card from "./Card.js";
+import TestimonialCard from "./TestimonialCard.js";
 
 
 function Main(){
@@ -38,9 +39,10 @@ function Main(){
                 <h1>Testimonials</h1>
             </div>
             <div className="testimonial-boxes">
-                <div className="ratings">
-                    <></>
-                </div>
+                <TestimonialCard
+                rating = {4}
+                review = "Little Lemon in Chicago delivered an authentic Mediterranean experience with their Greek Salad. The crisp freshness of the veggies and the rich creaminess of the feta made for a delightful culinary adventure. The two brothers running the restaurant truly captured the essence of Mediterranean flavors in the heart of Chicago."
+                />
             </div>
         </section>
         </>
