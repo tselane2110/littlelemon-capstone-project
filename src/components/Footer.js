@@ -1,5 +1,6 @@
 import React from "react";
 import icon from "../icons_assets/Logo .svg";
+import "./Footer.module.css";
 
 function Footer(){
     return(

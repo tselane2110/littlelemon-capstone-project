@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import icon from '../icons_assets/Logo.svg';
+import "./Nav.module.css";
 
 const logoStyle = {
     "width": "199.32px",

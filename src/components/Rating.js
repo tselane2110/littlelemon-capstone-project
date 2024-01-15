@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Rating.module.css";
 
 const ReviewBox = (props) => {
   const { rating } = props;

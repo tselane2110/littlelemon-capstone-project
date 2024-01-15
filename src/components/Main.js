@@ -6,6 +6,7 @@ import TestimonialCard from "./TestimonialCard.js";
 import chefs1 from '../icons_assets/Mario and Adrian A.jpg';
 import chefs2 from "../icons_assets/Mario and Adrian b.jpg";
 import styled from "styled-components";
+import "./Main.module.css"
 
 
 const Section = styled.section`

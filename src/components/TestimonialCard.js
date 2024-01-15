@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewBox from "./Rating";
 import r1 from "../icons_assets/r1.png";
+import "./TestimonialCard.module.css";
 
 function TestimonialCard(props){
     return(
