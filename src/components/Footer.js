@@ -3,8 +3,7 @@ import icon from "../icons_assets/Logo .svg";
 
 function Footer(){
     return(
-        <>
-        <footer>
+        <footer className="container">
         <img
             src={icon}
             alt='icon'
@@ -36,7 +35,6 @@ function Footer(){
             <li>Instagram</li>
         </ul>
         </footer>
-        </>
     )
 }
 
