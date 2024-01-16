@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Rating.module.css";
+import "./rating.css";
 
 const ReviewBox = (props) => {
   const { rating } = props;
@@ -13,7 +13,7 @@ const ReviewBox = (props) => {
 
       // Apply styling based on whether the star is filled or empty
       const starStyle = {
-        color: isFilled ? 'gold' : 'lightgray',
+        color: isFilled ? 'black' : 'white',
       };
 
       // Render the star

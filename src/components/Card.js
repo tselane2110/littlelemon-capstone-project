@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.module.css";
+import "./card.css";
 
 function Card(props){
     return(
@@ -7,16 +7,16 @@ function Card(props){
             <div className="card-img">
                 <img src={props.img} alt={props.alt}></img>
             </div>
-            <div className="card-title">
-                <h3>{props.title}</h3>
+            <div className="card-content">
+                <div className="card-header">
+                    <h3>{props.title}</h3>
+                    <h3>{props.price}</h3>
+                </div>
+                <div className="card-about">
+                    <p>{props.about}</p>
+                </div>
+                <a href={props.link}>Order a delivery</a>
             </div>
-            <div className="card-price">
-                <h3>{props.price}</h3>
-            </div>
-            <div className="card-about">
-                <p>{props.about}</p>
-            </div>
-            <a href={props.link}>Order a delivery</a>
         </div>
     )
 }

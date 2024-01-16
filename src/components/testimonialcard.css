@@ -1,0 +1,42 @@
+.testimonial-card{
+    width: 250px;
+    height: 190px;
+    padding: 20px;
+    background-color: #f4ce14;
+    color: #333333;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+.review-header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.r-img{
+    height: 70px;
+    width: 70px;
+}
+
+.review-header img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.review-header h3{
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-size: medium;
+}
+
+.reviewer-info{
+    height: 30px;
+    width: 150px;
+}
+
+.review p{
+    font-size: small;
+    text-align: justify;
+}

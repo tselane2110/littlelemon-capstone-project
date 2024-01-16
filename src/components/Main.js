@@ -5,39 +5,36 @@ import Card from "./Card.js";
 import TestimonialCard from "./TestimonialCard.js";
 import chefs1 from '../icons_assets/Mario and Adrian A.jpg';
 import chefs2 from "../icons_assets/Mario and Adrian b.jpg";
-import styled from "styled-components";
-import "./Main.module.css"
-
-
-const Section = styled.section`
-padding-left: 100px;
-padding-right: 100px;
-`
-const divInfo = {
-    "left" : "289px",
-    "top" : "170px",
-    "width" : "422px",
-    "height" : "331px"
-}
+import bruchetta from "../icons_assets/bruchetta.svg";
+import lemonDessert from "../icons_assets/lemon dessert.jpg";
+import r1 from "../icons_assets/r1.png";
+import "./main.css"
 
 function Main(){
     return(
-        <>
-        <Section className="Main container">
-            <div className="info" style={divInfo}>
+        <div className="main-section">
+
+            {/* Hero Section */}
+
+            <section className="Main container">
+            <div className="info">
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                <button>Reserve Table</button>
+                <button className="reserveTable btn-main">Reserve a Table</button>
             </div>
             <div className="Main-img">
                 <img src={mainImg} alt="bruchetta"></img>
             </div>
-        </Section>
-        <Section className="week-special container">
+        </section>
+
+        {/* Week Special Section */}
+
+        <section className="week-special container">
+            <div className="hero-section-size">
             <div className="header">
-                <h1>This Week's Special!</h1>
-                <button>Order Now</button>
+                <h1>This Week's Specials!</h1>
+                <button className="btn-main week-btn">Order Now</button>
             </div>
             <div className="special-cards">
                 <Card
@@ -47,20 +44,61 @@ function Main(){
                 about = "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. "
                 link = ""
                 />
+                <Card
+                img = {bruchetta}
+                title = "Bruschetta"
+                price = "$5.99"
+                about = "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
+                link = ""
+                />
+                <Card
+                img = {lemonDessert}
+                title = "Lemon Dessert"
+                price = "$5.00"
+                about = "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+                link = ""
+                />
             </div>
-        </Section>
-        <Section className="testimonials container">
+            </div>
+        </section>
+
+        {/* Testimonials Section */}
+
+        <section className="testimonials container">
             <div className="header">
                 <h1>Testimonials</h1>
             </div>
             <div className="testimonial-boxes">
                 <TestimonialCard
+                img = {r1}
+                name = "Elane Mask"
                 rating = {4}
-                review = "Little Lemon in Chicago delivered an authentic Mediterranean experience with their Greek Salad. The crisp freshness of the veggies and the rich creaminess of the feta made for a delightful culinary adventure. The two brothers running the restaurant truly captured the essence of Mediterranean flavors in the heart of Chicago."
+                review = "Little Lemon delivered an authentic Mediterranean experience with their Greek Salad. The crisp freshness of the veggies and the rich creaminess of the feta made my day. The two brothers running the restaurant are truly very humble!"
+                />
+                <TestimonialCard
+                img = {r1}
+                name = "Sam Smith"
+                rating = {3}
+                review = "The bruschetta at Little Lemon was very tasty, though a minor delay in service was noted. The overall experience was still enjoyable, a worthwhile visit!"
+                />
+                <TestimonialCard
+                img = {r1}
+                name = "Alien from Mars"
+                rating = {4}
+                review = "The bruschetta was an otherworldly delight. Your concept of time is perplexing, so I'll rate it 4/5 based on my Martian metric. Little Lemon is a cosmic gem in your gastronomic galaxy!"
+                />
+                <TestimonialCard
+                img = {r1}
+                name = "Frying Pan"
+                rating = {5}
+                review = "Chillin' at Little Lemon with my squad was straight-up epic and the bomb bruschetta made it the ultimate hangout spot. No cap, the service was smooth, and the whole vibe earned Little Lemon a solid 5/5. Highly recommend for a chill time with the crew."
                 />
             </div>
-        </Section>
-        <Section className="about-little-lemon container">
+        </section>
+
+        {/* About Little Lemon Section */}
+
+        <section className="about-little-lemon container">
             <div className="little-lemon-info">
                 <div className="header">
                     <h1>Little Lemon</h1>
@@ -71,11 +109,15 @@ function Main(){
                 </div>
             </div>
             <div className="Mario-Adrian">
-                <img src={chefs1} alt="Mario And Adrian"></img>
-                <img src={chefs2} alt="Adrian And Mario"></img>
+                <div className="img1">
+                    <img src={chefs1} alt="Mario And Adrian" ></img>
+                </div>
+                <div className="img2">
+                    <img src={chefs2} alt="Adrian And Mario" ></img>
+                </div>
             </div>
-        </Section>
-        </>
+        </section>
+        </div>
     )
 }
 

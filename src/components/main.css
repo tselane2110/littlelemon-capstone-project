@@ -1,0 +1,136 @@
+/*  btn-main -- button size for the main section throughout    */
+
+.btn-main{
+    width: 200px;
+    height: 60px;
+    background-color: #F4CE14;
+    color: #495E57;
+    border-color: #F4CE14;
+}
+
+/*  Main section   */
+
+.main-section{
+    text-align: center;
+}
+
+.container{
+    padding: 30px 30px 30px 30px;
+    display: inline-block;
+    margin: 5px;
+    text-align: left;
+}
+
+.Main{
+    display: inline-flex;
+    height: 406px;
+}
+
+.Main .info{
+    width: 422px;
+    height: 331px;
+    padding-right: 20px;
+}
+
+.info p, .info h3, .info h1{
+    margin-bottom: 30px;
+}
+
+.Main-img img{
+    width: 375px;
+    height: 325px;
+    padding-left: 20px;
+}
+
+.btn-main{
+    margin-top: 30px
+}
+
+/*  Hero Section   */
+
+.hero-section-size{
+    width: 858px;
+    height: 555px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1{
+    font-size: 44px;
+}
+
+.week-btn{
+    margin-left: auto;
+}
+
+.special-cards{
+    display: flex;
+    text-align: center;
+}
+
+
+/*  testimonial section */
+
+.testimonial-boxes{
+    display: flex;
+}
+
+.testimonials .header{
+    justify-content: center;
+}
+
+/*  About Little Lemon  */
+
+.about-little-lemon{
+    width: 1022px;
+    height: 444px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.little-lemon-info{
+    width: 373px;
+    height: 422px;
+    margin-right: 30px;
+}
+
+.little-lemon-info .header{
+    display: block;
+}
+
+.Mario-Adrian{
+    margin-left: 30px;
+    width: 557px;
+    height: 450px;
+    position: relative;
+}
+
+.Mario-Adrian .img1, .Mario-Adrian .img2{
+    width: 267.94px;
+    height: 336px;
+}
+
+.img1{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.img1 img, .img2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #495E57; /* Set border style and color */
+    box-sizing: border-box; /* Include border in width and height */
+}
+
+.img2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}

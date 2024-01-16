@@ -1,5 +1,9 @@
+#root{
+    background-color: white;
+}
+
 .container{
-    padding: 30px;
+    padding: 25px;
 }
 
 img{
