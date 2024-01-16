@@ -20,7 +20,7 @@ function Main(){
             <div className="info">
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
-                <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                <p>Welcome to Little Lemon, where we bring the Mediterranean to your plate. Our menu dances through Italian, Turkish, and Greek flavors, offering pastas, kebabs, and salads that are simply delicious. Every bite is a taste of the Mediterranean sunshine at Little Lemon, where simplicity meets flavor in the most delightful way.</p>
                 <button className="reserveTable btn-main">Reserve a Table</button>
             </div>
             <div className="Main-img">
