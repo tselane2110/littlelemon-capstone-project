@@ -34,7 +34,7 @@ function Main(){
             <div className="hero-section-size">
             <div className="header">
                 <h1>This Week's Specials!</h1>
-                <button className="btn-main week-btn">Order Now</button>
+                <button className="btn-main week-btn">Online Menu</button>
             </div>
             <div className="special-cards">
                 <Card

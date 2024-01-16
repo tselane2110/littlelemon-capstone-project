@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    color: #495E57;
+    color: #333333;
 }
 
 .card-about{
@@ -39,6 +39,33 @@
     text-align: justify;
 }
 
-.card-content a{
-    margin-top: 5px;
+.card-footer{
+    display: inline-flex;
+    height: 40px;
 }
+
+.footer-img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.footer-img img{
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.footer-title{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.footer-title a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #495E57;
+}
+
