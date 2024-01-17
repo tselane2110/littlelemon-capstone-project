@@ -1,5 +1,5 @@
 import React from "react";
-import mainImg from "../icons_assets/bruchetta.svg";
+import mainImg from "../icons_assets/restauranfood.jpg";
 import GreekSalad from '../icons_assets/greek salad.jpg';
 import Card from "./Card.js";
 import TestimonialCard from "./TestimonialCard.js";
@@ -8,9 +8,11 @@ import chefs2 from "../icons_assets/Mario and Adrian b.jpg";
 import bruchetta from "../icons_assets/bruchetta.svg";
 import lemonDessert from "../icons_assets/lemon dessert.jpg";
 import r1 from "../icons_assets/r1.png";
-import "./main.css"
+import "./main.css";
+import { Link } from "react-router-dom";
 
 function Main(){
+
     return(
         <div className="main-section">
 
@@ -21,7 +23,10 @@ function Main(){
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>Welcome to Little Lemon, where we bring the Mediterranean to your plate. Our menu dances through Italian, Turkish, and Greek flavors, offering pastas, kebabs, and salads that are simply delicious. Every bite is a taste of the Mediterranean sunshine at Little Lemon, where simplicity meets flavor in the most delightful way.</p>
-                <button className="reserveTable btn-main">Reserve a Table</button>
+                <Link to="/bookingPage">
+                    <button className="reserveTable btn-main">Reserve a Table</button>
+                </Link>
+
             </div>
             <div className="Main-img">
                 <img src={mainImg} alt="bruchetta"></img>
@@ -77,7 +82,7 @@ function Main(){
                 />
                 <TestimonialCard
                 img = {r1}
-                name = "Sam Smith"
+                name = "Ivoine"
                 rating = {3}
                 review = "The bruschetta at Little Lemon was very tasty, though a minor delay in service was noted. The overall experience was still enjoyable, a worthwhile visit!"
                 />

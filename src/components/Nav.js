@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import icon from '../icons_assets/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const logoStyle = {
     "width": "199.32px",
@@ -27,7 +28,9 @@ function Nav(){
         <div style={style}>
             <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} centered indicatorColor='white' textColor='Black'>
-            <img className='icon-logo' src={icon} alt='icon' style={logoStyle}/>
+            <Link to="/">
+                <img className='icon-logo' src={icon} alt='icon' style={logoStyle}/>
+            </Link>
                 <Tab label="Home" />
                 <Tab label = "About"/>
                 <Tab label="Menu" />
