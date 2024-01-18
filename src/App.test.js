@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import BookingForm from './components/booking-form';
-import {updateTimes, initializeTimes} from './components/BookingPage';
+import BookingForm from './components/booking-form/booking-form';
+import {updateTimes, initializeTimes} from './components/pages/BookingPage';
 import App from './App';
 
 // writing unit tests, if u have any props which u need to give to a child component, u have to give them here as well.

@@ -1,5 +1,5 @@
 import React from "react";
-import ReviewBox from "./Rating";
+import ReviewBox from "../rating/Rating";
 import "./testimonialcard.css";
 
 function TestimonialCard(props){

@@ -2,7 +2,7 @@ import React from "react";
 import "./booking-form.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { submitAPI } from "../BookingsAPI";
+import { submitAPI } from "../../BookingsAPI";
 
 // get current date
 

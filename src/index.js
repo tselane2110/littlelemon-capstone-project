@@ -7,8 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import BookingPage from './components/BookingPage';
-import ConfirmedBooking from './components/ConfirmedBooking';
+import BookingPage from "./components/Pages/BookingPage";
+import ConfirmedBooking from "./components/Pages/ConfirmedBooking";
 
 
 const router = createBrowserRouter([

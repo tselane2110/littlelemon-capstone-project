@@ -1,13 +1,13 @@
 import React from "react";
-import mainImg from "../icons_assets/restauranfood.jpg";
-import GreekSalad from '../icons_assets/greek salad.jpg';
-import Card from "./Card.js";
-import TestimonialCard from "./TestimonialCard.js";
-import chefs1 from '../icons_assets/Mario and Adrian A.jpg';
-import chefs2 from "../icons_assets/Mario and Adrian b.jpg";
-import bruchetta from "../icons_assets/bruchetta.svg";
-import lemonDessert from "../icons_assets/lemon dessert.jpg";
-import r1 from "../icons_assets/r1.png";
+import mainImg from "../../icons_assets/restauranfood.jpg";
+import GreekSalad from '../../icons_assets/greek salad.jpg';
+import Card from "../card/Card.js";
+import TestimonialCard from "../testimonial-card/TestimonialCard.js";
+import chefs1 from '../../icons_assets/Mario and Adrian A.jpg';
+import chefs2 from "../../icons_assets/Mario and Adrian b.jpg";
+import bruchetta from "../../icons_assets/bruchetta.svg";
+import lemonDessert from "../../icons_assets/lemon dessert.jpg";
+import r1 from "../../icons_assets/r1.png";
 import "./main.css";
 import { Link } from "react-router-dom";
 

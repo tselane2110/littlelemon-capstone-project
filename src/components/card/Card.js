@@ -1,5 +1,5 @@
 import React from "react";
-import deliveryGuy from "../icons_assets/delivery.png";
+import deliveryGuy from "../../icons_assets/delivery.png";
 import "./card.css";
 
 function Card(props){
