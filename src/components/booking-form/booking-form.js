@@ -60,7 +60,7 @@ function BookingForm(props){
         <h1 className="heading-booking-form">Reserve a Table</h1>
         <form onSubmit={formSubmission}>
             <label htmlFor="res-date">Choose date
-                <input type="date" id="res-date" name="date" required
+                <input type="date" id="res-date" name="date" data-testid = "date" required
                 onChange={(e)=>{
                     setDate(e.target.value);
                     props.dispatch(date);
@@ -69,7 +69,7 @@ function BookingForm(props){
                 />
             </label>
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time " name="time" placeholder="Select Time" required onChange={(e)=>{
+            <select id="res-time " name="time" placeholder="Select Time" data-testid = "time" required onChange={(e)=>{
                     setTime(e.target.value);
                     handleSubmit();
                 }}>
@@ -82,7 +82,7 @@ function BookingForm(props){
 
             </select>
             <label htmlFor="guests">Number of guests
-                <input type="number" name="numberOfGuests" value={numberOfGuests} min="1" max="10" id="guests"
+                <input type="number" name="numberOfGuests" data-testid = "numberOfGuests" value={numberOfGuests} min="1" max="10" id="guests"
                 required
                 onChange={(e)=>{
                     setNumberOfGuests(e.target.value);
@@ -91,7 +91,7 @@ function BookingForm(props){
                 />
             </label>
             <label htmlFor="occasion">Occasion</label>
-            <select id="occasion" name="occasion" placeholder="Select Occasion" onChange={(e)=>{
+            <select id="occasion" name="occasion" data-testid = "occasion" placeholder="Select Occasion" onChange={(e)=>{
                     setOccasion(e.target.value);
                     handleSubmit();
                 }} required>
@@ -101,7 +101,7 @@ function BookingForm(props){
                     <option>Graduation</option>
                     <option>Meetup</option>
             </select>
-            <button type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
+            <button aria-label="submit button" data-testid = "submit-btn" type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
             `Date: {date}, time: {time}, numberofGuests: {numberOfGuests}, occasion: {occasion}`
         </form>
         </>
