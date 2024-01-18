@@ -30,7 +30,15 @@ const formatTime = (time) => {
 };
 
 function submitAPI(formData) {
-    return true;
+    const formFields = (formData.date !== "") && (formData.time !== "") && (formData.numberOfGuests !== 0) && (formData.occasion !== "");
+    if(formFields === true){
+        return true
+    }
+    else{
+        return false
+    }
+
 }
 
 export {fetchAPI, submitAPI};
+

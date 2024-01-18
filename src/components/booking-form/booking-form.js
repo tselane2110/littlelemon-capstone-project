@@ -1,11 +1,11 @@
 import React from "react";
 import "./booking-form.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { submitAPI } from "../../BookingsAPI";
 
 // get current date
-
+/*
 const getCurrentDate = () => {
     const today = new Date();
     const day = today.getDate().toString().padStart(2, '0');
@@ -13,15 +13,16 @@ const getCurrentDate = () => {
     const year = today.getFullYear();
 
     return `${day}-${month}-${year}`;
-};
+};*/
 
 function BookingForm(props){
     const availableTimeSlots = props.timeSlots;
     const navigate = useNavigate();
-    const [date, setDate] = useState(getCurrentDate());
-    const [time, setTime] = useState(availableTimeSlots[0]);
-    const [numberOfGuests, setNumberOfGuests] = useState(1);
-    const[occasion, setOccasion] = useState("Meetup");
+    const [date, setDate] = useState("");
+    const [time, setTime] = useState("");
+    const [numberOfGuests, setNumberOfGuests] = useState("0");
+    const[occasion, setOccasion] = useState("");
+    const [isDisabled, setIsDisabled] = useState(true);
 
     const formData = {
         "Date" : date,
@@ -30,15 +31,27 @@ function BookingForm(props){
         "Occasion" : occasion
     }
 
+    // useEffect will invoke the handleSubmit function, everytime either of the values in the dependency array changes
+    useEffect(handleSubmit, [date, time, numberOfGuests, occasion]);
+
+    function handleSubmit(){
+        const formFields = (date !== "") && (time !== "") && (numberOfGuests !== "" && numberOfGuests >= 1 && numberOfGuests <= 10) && (occasion !== "");
+        if (formFields === true ){
+            setIsDisabled(false);
+        }
+        else{
+            setIsDisabled(true);
+        }
+    }
+
     function formSubmission(e){
         e.preventDefault();
-        console.log(formData);
-
         // using submitAPI to validate form data or to validate successful booking
-        const result = submitAPI(formData);
-
-        if (result===true){
+        if (submitAPI(formData) === true){
             navigate("/confirmedBooking");
+        }
+        else{
+            alert("Please submit the form fields correctly!");
         }
     }
     return(
@@ -47,17 +60,20 @@ function BookingForm(props){
         <h1 className="heading-booking-form">Reserve a Table</h1>
         <form onSubmit={formSubmission}>
             <label htmlFor="res-date">Choose date
-                <input type="date" id="res-date" name="date"
+                <input type="date" id="res-date" name="date" required
                 onChange={(e)=>{
                     setDate(e.target.value);
                     props.dispatch(date);
+                    handleSubmit();
                 }}
                 />
             </label>
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time " name="time" onChange={(e)=>{
+            <select id="res-time " name="time" placeholder="Select Time" required onChange={(e)=>{
                     setTime(e.target.value);
+                    handleSubmit();
                 }}>
+                    <option value="">Select an option</option>
                     {availableTimeSlots.map((timeSlot, index) => (
                         <option key={index} value={timeSlot}>
                             {timeSlot}
@@ -66,22 +82,26 @@ function BookingForm(props){
 
             </select>
             <label htmlFor="guests">Number of guests
-                <input type="number" name="numberOfGuests" placeholder="1" min="1" max="10" id="guests"
+                <input type="number" name="numberOfGuests" value={numberOfGuests} min="1" max="10" id="guests"
+                required
                 onChange={(e)=>{
                     setNumberOfGuests(e.target.value);
+                    handleSubmit();
                 }}
                 />
             </label>
             <label htmlFor="occasion">Occasion</label>
-            <select id="occasion" name="occasion" onChange={(e)=>{
+            <select id="occasion" name="occasion" placeholder="Select Occasion" onChange={(e)=>{
                     setOccasion(e.target.value);
-                }}>
-                <option>Birthday</option>
-                <option>Anniversary</option>
-                <option>Graduation</option>
-                <option>Meetup</option>
+                    handleSubmit();
+                }} required>
+                    <option value="">Select an option</option>
+                    <option>Birthday</option>
+                    <option>Anniversary</option>
+                    <option>Graduation</option>
+                    <option>Meetup</option>
             </select>
-            <button type="submit" value="Make Your reservation" name="submit">Make Your reservation</button>
+            <button type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
             `Date: {date}, time: {time}, numberofGuests: {numberOfGuests}, occasion: {occasion}`
         </form>
         </>
