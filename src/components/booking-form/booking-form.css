@@ -68,6 +68,7 @@ input, select{
     background-color: #edefee;
     color: #495E57;
     border-color: #333333;
+    cursor: no-drop;
 }
 
 .submit-button button:not(:disabled):hover{
