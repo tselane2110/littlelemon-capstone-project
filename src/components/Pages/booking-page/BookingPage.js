@@ -28,7 +28,7 @@ function BookingPage(){
     const [state, dispatch] = useReducer(updateTimes, initializeTimes);
 
     return(
-        <div className="container">
+        <div>
             <NavBar/>
             <BookingForm timeSlots = {state} dispatch = {dispatch}/>
             <Footer/>

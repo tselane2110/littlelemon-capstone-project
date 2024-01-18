@@ -1,0 +1,33 @@
+.confirmed-booking{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 65px;
+    padding-top: 65px;
+    background-color: #495E57;
+}
+
+.cb-size{
+    text-align: center;
+}
+
+.cb-size button{
+    margin-left: auto;
+    width: 200px;
+    height: 60px;
+    color: #495E57;
+    background-color: #F4CE14;
+    border-color: #F4CE14;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cb-size button:hover{
+    background-color: #edefee;
+    color: #495E57;
+    transform: scale(0.95);
+    cursor: pointer;
+    border-color: 2px solid #333333;
+}

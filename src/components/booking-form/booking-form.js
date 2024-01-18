@@ -57,52 +57,63 @@ function BookingForm(props){
     return(
 
         <div className="booking-form">
-        <h1 className="heading-booking-form">Reserve a Table</h1>
-        <form onSubmit={formSubmission}>
-            <label htmlFor="res-date">Choose date
-                <input type="date" id="res-date" name="date" data-testid = "date" required
-                onChange={(e)=>{
-                    setDate(e.target.value);
-                    props.dispatch(date);
-                    handleSubmit();
-                }}
-                />
-            </label>
-            <label htmlFor="res-time">Choose time</label>
-            <select id="res-time " name="time" placeholder="Select Time" data-testid = "time" required onChange={(e)=>{
-                    setTime(e.target.value);
-                    handleSubmit();
-                }}>
-                    <option value="">Select an option</option>
-                    {availableTimeSlots.map((timeSlot, index) => (
-                        <option key={index} value={timeSlot}>
-                            {timeSlot}
-                        </option>
-                     ))}
-
-            </select>
-            <label htmlFor="guests">Number of guests
-                <input type="number" name="numberOfGuests" data-testid = "numberOfGuests" value={numberOfGuests} min="1" max="10" id="guests"
-                required
-                onChange={(e)=>{
-                    setNumberOfGuests(e.target.value);
-                    handleSubmit();
-                }}
-                />
-            </label>
-            <label htmlFor="occasion">Occasion</label>
-            <select id="occasion" name="occasion" data-testid = "occasion" placeholder="Select Occasion" onChange={(e)=>{
-                    setOccasion(e.target.value);
-                    handleSubmit();
-                }} required>
-                    <option value="">Select an option</option>
-                    <option>Birthday</option>
-                    <option>Anniversary</option>
-                    <option>Graduation</option>
-                    <option>Meetup</option>
-            </select>
-            <button aria-label="submit button" data-testid = "submit-btn" type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
-        </form>
+            <div className="booking-form-size">
+                <h1 className="heading-booking-form">Reserve a Table</h1>
+                <form onSubmit={formSubmission}>
+                    <div className="form-size">
+                        <div className="date">
+                            <label htmlFor="res-date">Choose date</label>
+                            <input type="date" id="res-date" name="date" data-testid = "date" required
+                            onChange={(e)=>{
+                                setDate(e.target.value);
+                                props.dispatch(date);
+                                handleSubmit();
+                            }}
+                            />
+                        </div>
+                        <div className="time">
+                            <label htmlFor="res-time">Choose time</label>
+                            <select id="res-time " name="time" placeholder="Select Time" data-testid = "time" required onChange={(e)=>{
+                                    setTime(e.target.value);
+                                    handleSubmit();
+                                }}>
+                                    <option value="">Select an option</option>
+                                    {availableTimeSlots.map((timeSlot, index) => (
+                                        <option key={index} value={timeSlot}>
+                                            {timeSlot}
+                                        </option>
+                                    ))}
+                            </select>
+                        </div>
+                        <div className="number-of-guests">
+                            <label htmlFor="guests">Number of guests</label>
+                            <input id="numberOfGuests" type="number" name="numberOfGuests" data-testid = "numberOfGuests" value={numberOfGuests} min="1" max="10"
+                            required
+                            onChange={(e)=>{
+                                setNumberOfGuests(e.target.value);
+                                handleSubmit();
+                            }}
+                            />
+                        </div>
+                        <div className="occasion">
+                            <label htmlFor="occasion">Occasion</label>
+                            <select id="occasion" name="occasion" data-testid = "occasion" placeholder="Select Occasion" onChange={(e)=>{
+                                    setOccasion(e.target.value);
+                                    handleSubmit();
+                                }} required>
+                                    <option value="">Select an option</option>
+                                    <option>Birthday</option>
+                                    <option>Anniversary</option>
+                                    <option>Graduation</option>
+                                    <option>Meetup</option>
+                            </select>
+                        </div>
+                        <div className="submit-button">
+                        <button aria-label="submit button" data-testid = "submit-btn" type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
+                    </div>
+                        </div>
+                </form>
+        </div>
         </div>
     )
 }

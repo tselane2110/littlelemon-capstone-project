@@ -1,0 +1,79 @@
+.booking-form{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 65px;
+    padding-top: 65px;
+    background-color: #495E57;
+}
+
+.booking-form-size{
+    width: 500px;
+    height: auto;
+    justify-content: center;
+}
+
+.booking-form-size h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-size{
+    width: 350px;
+}
+
+.date, .time, .number-of-guests, .occasion{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+input, select{
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.submit-button{
+    text-align: center;
+}
+
+.submit-button button{
+    margin-left: auto;
+    width: 200px;
+    height: 60px;
+    color: #495E57;
+    background-color: #F4CE14;
+    border-color: #F4CE14;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.submit-button button:disabled{
+    background-color: #edefee;
+    color: #495E57;
+    border-color: #333333;
+}
+
+.submit-button button:not(:disabled):hover{
+    background-color: #F4CE14;
+    color: #495E57;
+    transform: scale(0.95);
+    cursor: pointer;
+    border-color: 2px solid #333333;
+}
