@@ -13,7 +13,7 @@ const ReviewBox = (props) => {
 
       // Apply styling based on whether the star is filled or empty
       const starStyle = {
-        color: isFilled ? 'black' : 'white',
+        color: isFilled ? '#f4ce14' : 'black',
       };
 
       // Render the star

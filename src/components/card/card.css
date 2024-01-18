@@ -23,20 +23,25 @@
 .card-content{
     padding: 20px;
     text-align: center;
-    background-color: #edefee;
+    background-color: #333333; /*#edefee*/
 }
 
 .card-header{
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    color: #333333;
+    color: #f4ce14;
+}
+
+.card-header .price{
+    color: #ee9972;
 }
 
 .card-about{
     width: 216.74px;
     height: 135px;
     text-align: justify;
+    color: #edefee;
 }
 
 .card-footer{
@@ -66,6 +71,6 @@
 .footer-title a{
     text-decoration: none;
     font-weight: bold;
-    color: #495E57;
+    color: #fbdabb;
 }
 

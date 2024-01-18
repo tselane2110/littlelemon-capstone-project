@@ -1,5 +1,5 @@
 import React from "react";
-import deliveryGuy from "../../icons_assets/delivery.png";
+import deliveryGuy from "../../icons_assets/delivery_guy.png";
 import "./card.css";
 
 function Card(props){
@@ -10,8 +10,8 @@ function Card(props){
             </div>
             <div className="card-content">
                 <div className="card-header">
-                    <h3>{props.title}</h3>
-                    <h3>{props.price}</h3>
+                    <h3 className="title">{props.title}</h3>
+                    <h3 className="price">{props.price}</h3>
                 </div>
                 <div className="card-about">
                     <p>{props.about}</p>
