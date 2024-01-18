@@ -4,7 +4,8 @@ import "./footer.css";
 
 function Footer(){
     return(
-        <footer className="container footer">
+        <footer className="footer">
+        <div className="footer-size">
         <div className="footer-logo">
             <img src={icon} alt='icon'/>
         </div>
@@ -39,6 +40,7 @@ function Footer(){
                 <li>Facebook</li>
                 <li>Instagram</li>
             </ul>
+        </div>
         </div>
         </footer>
     )

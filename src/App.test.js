@@ -1,6 +1,6 @@
 import { getByRole, getByTestId, render, screen } from '@testing-library/react';
 import BookingForm from './components/booking-form/booking-form';
-import {BookingPage, updateTimes, initializeTimes} from './components/Pages/BookingPage';
+import {BookingPage, updateTimes, initializeTimes} from './components/Pages/booking-page/BookingPage';
 import App from './App';
 import { type } from '@testing-library/user-event/dist/type';
 import { isDisabled } from '@testing-library/user-event/dist/utils';

@@ -4,17 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import icon from '../../icons_assets/Logo.svg';
 import { Link } from 'react-router-dom';
-
-const logoStyle = {
-    "width": "199.32px",
-    "height": "74px",
-    "padding-right": "40px"
-}
-
-const style = {
-    "left" : "292px",
-    "top" : "23px",
-}
+import "./nav.css";
 
 function Nav(){
 
@@ -25,11 +15,12 @@ function Nav(){
     };
 
     return (
-        <div style={style}>
+        <div className='nav'>
+            <div className='nav-size'>
             <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} centered indicatorColor='white' textColor='Black'>
             <Link to="/">
-                <img className='icon-logo' src={icon} alt='icon' style={logoStyle}/>
+                <img className='icon-logo logoStyle' src={icon} alt='icon'/>
             </Link>
                 <Tab label="Home" />
                 <Tab label = "About"/>
@@ -39,6 +30,7 @@ function Nav(){
                 <Tab label = " Login"/>
             </Tabs>
             </Box>
+            </div>
         </div>
     );
 }

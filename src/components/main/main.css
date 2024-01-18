@@ -1,110 +1,161 @@
-/*  btn-main -- button size for the main section throughout    */
+/*  hero section   */
+.hero-section{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 65px;
+    padding-top: 65px;
+    background-color: #495E57;
+}
 
-.btn-main{
+.hero-section-size{
+    width: 900px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-size .info{
+    width: 450px;
+    height: 360px;
+}
+
+.hero-section-size .info p{
+    width: 400px;
+    text-align: justify;
+}
+
+.hero-section button{
+    margin-left: auto;
     width: 200px;
     height: 60px;
-    background-color: #F4CE14;
     color: #495E57;
+    background-color: #F4CE14;
     border-color: #F4CE14;
 }
 
-/*  Main section   */
-
-.main-section{
-    text-align: center;
-}
-
-.container{
-    padding: 30px 30px 30px 30px;
-    display: inline-block;
-    margin: 5px;
-    text-align: left;
-}
-
-.Main{
-    display: inline-flex;
-    height: 406px;
-}
-
-.Main .info{
-    width: 422px;
-    height: 331px;
-    padding-right: 20px;
-}
-
-.info p, .info h3, .info h1{
-    margin-bottom: 30px;
-}
-
-.Main-img img{
+.hero-section-size .img{
     width: 375px;
     height: 325px;
-    padding-left: 20px;
 }
 
-.btn-main{
-    margin-top: 30px
+.hero-section-size .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-/*  Hero Section   */
+/*  Week Special */
 
-.hero-section-size{
-    width: 858px;
+.week-special{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #edefee;
+}
+
+.week-special-size{
     height: 555px;
+    width: 858px;
 }
 
-.header{
+.week-special-size .header{
     display: flex;
     justify-content: space-between;
 }
 
-.header h1{
-    font-size: 44px;
+.week-special-size h1{
+    margin-left: 15px;
 }
 
-.week-btn{
+.week-special-size .btn-main{
     margin-left: auto;
+    width: 200px;
+    height: 60px;
+    color: #495E57;
+    background-color: #F4CE14;
+    border-color: #F4CE14;
 }
 
 .special-cards{
     display: flex;
-    text-align: center;
 }
 
 
-/*  testimonial section */
+/* Testimonial - section */
+
+.testimonials{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #495E57;
+}
+
+.testimonials-size{
+    width: 1200px;
+    height: 320px;
+    display: block;
+}
+
+.header{
+    text-align: center;
+}
 
 .testimonial-boxes{
     display: flex;
 }
 
-.testimonials .header{
-    justify-content: center;
-}
-
 /*  About Little Lemon  */
 
 .about-little-lemon{
-    width: 1022px;
-    height: 444px;
-    display: inline-flex;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #edefee;
+}
+
+.about-ll-size{
+    width: 1020px;
+    height: 450px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.little-lemon-info{
-    width: 373px;
-    height: 422px;
-    margin-right: 30px;
+.about-little-lemon .info{
+    width: 440px;
+    height: 360px;
+    margin-right: 15px;
 }
 
-.little-lemon-info .header{
-    display: block;
+.about-little-lemon .info .header{
+    text-align: justify;
+}
+
+.about-little-lemon .about p{
+    text-align: justify;
 }
 
 .Mario-Adrian{
-    margin-left: 30px;
     width: 557px;
     height: 450px;
+    display: flex;
+    margin-left: 15px;
     position: relative;
 }
 

@@ -1,9 +1,10 @@
 import React from "react";
-import BookingForm from "../booking-form/booking-form";
-import NavBar from "../nav/Nav";
-import Footer from "../footer/Footer";
+import BookingForm from "../../booking-form/booking-form";
+import NavBar from "../../nav/Nav";
+import Footer from "../../footer/Footer";
 import { useReducer } from 'react';
-import { fetchAPI } from "../../BookingsAPI";
+import { fetchAPI } from "../../../BookingsAPI";
+import "./BookingPage.css";
 
 /*export const updateTimes = (state, action) =>{
     return fetchAPI(state);
@@ -27,7 +28,7 @@ function BookingPage(){
     const [state, dispatch] = useReducer(updateTimes, initializeTimes);
 
     return(
-        <div>
+        <div className="container">
             <NavBar/>
             <BookingForm timeSlots = {state} dispatch = {dispatch}/>
             <Footer/>

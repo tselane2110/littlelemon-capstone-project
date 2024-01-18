@@ -56,7 +56,7 @@ function BookingForm(props){
     }
     return(
 
-        <>
+        <div className="booking-form">
         <h1 className="heading-booking-form">Reserve a Table</h1>
         <form onSubmit={formSubmission}>
             <label htmlFor="res-date">Choose date
@@ -102,9 +102,8 @@ function BookingForm(props){
                     <option>Meetup</option>
             </select>
             <button aria-label="submit button" data-testid = "submit-btn" type="submit" value="Make Your reservation" name="submit" disabled={isDisabled}>Make Your reservation</button>
-            `Date: {date}, time: {time}, numberofGuests: {numberOfGuests}, occasion: {occasion}`
         </form>
-        </>
+        </div>
     )
 }
 

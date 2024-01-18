@@ -1,6 +1,15 @@
 .footer{
+    width: 100vw;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footer-size{
+    display: flex;
 }
 
 .footer-logo, .col{
