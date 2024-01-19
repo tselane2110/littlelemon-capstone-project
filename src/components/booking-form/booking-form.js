@@ -72,7 +72,7 @@ function BookingForm(props){
                             />
                         </div>
                         <div className="time">
-                            <label htmlFor="res-time">Choose time</label>
+                            <label htmlFor="res-time">Available Time Slots </label>
                             <select id="res-time " name="time" placeholder="Select Time" data-testid = "time" required onChange={(e)=>{
                                     setTime(e.target.value);
                                     handleSubmit();
