@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import BookingPage from "./components/Pages/booking-page/BookingPage";
 import ConfirmedBooking from "./components/Pages/confirmed-booking/ConfirmedBooking";
+import Menu from "./components/Pages/menu/Menu";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/confirmedBooking",
     element: <ConfirmedBooking/>
+  },
+  {
+    path: "/menu",
+    element: <Menu/>
   }
 ]);
 
