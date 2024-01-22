@@ -1,0 +1,25 @@
+.menu-nav{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 2px;
+    padding-top: 2px;
+    background-color: #f4ce14;
+}
+
+.menu-nav-size{
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu-item-link{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #495E57;
+    font-weight: bold;
+}
