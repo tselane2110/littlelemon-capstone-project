@@ -6,10 +6,22 @@
     align-items: center; /* vertically */
     padding-bottom: 2px;
     padding-top: 2px;
+    background-color: #edefee;
 }
 
 .nav-size{
     width: 1000px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #495E57;
+    font-weight: bold;
 }
 
 .logoStyle{
