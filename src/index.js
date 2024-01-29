@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import BookingPage from "./components/Pages/booking-page/BookingPage";
 import ConfirmedBooking from "./components/Pages/confirmed-booking/ConfirmedBooking";
-import Menu from "./components/Pages/menu/Menu";
+import OrderOnline from "./components/Pages/OrderOnline/OrderOnline";
 
 
 const router = createBrowserRouter([
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
     element: <ConfirmedBooking/>
   },
   {
-    path: "/menu",
-    element: <Menu/>
+    path: "/orderOnline",
+    element: <OrderOnline/>
   }
 ]);
 
