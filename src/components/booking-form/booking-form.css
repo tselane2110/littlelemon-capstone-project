@@ -23,34 +23,29 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .form-size{
-    width: 350px;
-}
-
-.date, .time, .number-of-guests, .occasion{
-    display: flex;
+    width: 450px;
     justify-content: space-between;
-    padding-bottom: 20px;
-    align-items: center;
+    font-size: 24px;
 }
 
-label{
-    margin-bottom: 10px;
-    font-size: 16px;
-    width: 150px;
+.form-size .input{
+    width: 450px;
+    justify-content: space-between;
+    margin: 20px 10px 20px 10px;
 }
 
-input, select{
-    width: 170px;
-    height: 40px;
-    text-align: center;
-    font-size: 14px;
+.input-value input, .input-value select{
+    width: 200px;
+    height: 50px;
 }
 
 .submit-button{
     text-align: center;
+    margin-top: 40px;
 }
 
 .submit-button button{

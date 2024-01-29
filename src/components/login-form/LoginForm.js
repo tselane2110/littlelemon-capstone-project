@@ -35,11 +35,11 @@ function LoginForm(){
                 </div>
                 <div className="login-form-body">
                     <form onSubmit={formSubmission}>
-                        <div className="input">
-                            <div className="input-header">
+                        <div className="login-form-input">
+                            <div className="login-form-header">
                                 <label htmlFor="email">Email</label>
                             </div>
-                            <div className="input-value">
+                            <div className="login-form-value">
                                 <input id="email" className="form-input" type="email" placeholder="Enter Email Address"
                                 required
                                 value={email}
@@ -49,11 +49,11 @@ function LoginForm(){
                                 </input>
                             </div>
                         </div>
-                        <div className="input">
-                            <div className="input-header">
+                        <div className="login-form-input">
+                            <div className="login-form-input-header">
                                 <label htmlFor="password" className="input-header">Password</label>
                             </div>
-                            <div className="input-value">
+                            <div className="login-form-value">
                                 <input id="password" className="form-input" type="password" placeholder="Enter Password"
                                 required
                                 value={password}

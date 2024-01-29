@@ -10,6 +10,11 @@
     background-color: #495E57;
 }
 
+
+.login-form form{
+    margin-top: 0;
+}
+
 .login-form-size{
     width: 900px;
     height: 360px;
@@ -19,6 +24,8 @@
 
 .login-form-header{
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-form-body{
@@ -32,12 +39,16 @@
     display: block;
 }
 
-.input{
+.login-form-input, .input{
     display: flex;
     width: 300px;
     margin: 10px 10px 20px 10px;
     height: auto;
     justify-content: space-between;
+}
+
+.login-form-input input{
+    height: 30px;
 }
 
 .login-btn{
@@ -49,6 +60,7 @@
     border-color: #F4CE14;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .login-btn:hover{
