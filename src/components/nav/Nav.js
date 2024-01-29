@@ -16,7 +16,7 @@ function Nav(){
                 <Link to="/" className='nav-link'>Menu</Link>
                 <Link to="/bookingPage" className='nav-link'>Reservations</Link>
                 <Link to="/orderOnline" className='nav-link'>Order Online</Link>
-                <Link to="/" className='nav-link'>Login</Link>
+                <Link to="/login" className='nav-link'>Login</Link>
             </div>
         </div>
     );
