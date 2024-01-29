@@ -40,7 +40,9 @@ function Main(){
             <div className="week-special-size">
             <div className="header">
                 <h1>This Week's Specials!</h1>
-                <button className="btn-main week-btn">Online Menu</button>
+                <Link to="/orderOnline">
+                    <button className="btn-main week-btn">Online Menu</button>
+                </Link>
             </div>
             <div className="special-cards">
                 <Card
