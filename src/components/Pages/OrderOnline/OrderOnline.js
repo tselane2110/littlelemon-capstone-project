@@ -86,7 +86,7 @@ function OrderOnline(){
                 <section className="main-course menu-section" id={sectionIds[2]}>
                     <div className="menu-section-size">
                         <div className="menu-section-header">
-                            <h1>Main Courses</h1>
+                            <h1>Main Course</h1>
                         </div>
                         <div className="menu-section-body">
                             <Card
