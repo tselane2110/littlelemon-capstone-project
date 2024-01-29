@@ -10,6 +10,7 @@ import {
 import BookingPage from "./components/Pages/booking-page/BookingPage";
 import ConfirmedBooking from "./components/Pages/confirmed-booking/ConfirmedBooking";
 import OrderOnline from "./components/Pages/OrderOnline/OrderOnline";
+import Login from "./components/Pages/Login/Login";
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/orderOnline",
     element: <OrderOnline/>
+  },
+  {
+    path: "/login",
+    element: <Login/>
   }
 ]);
 
