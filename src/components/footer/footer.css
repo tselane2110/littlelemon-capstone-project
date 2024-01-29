@@ -35,3 +35,13 @@ ul{
     list-style: none;
     text-align: justify;
 }
+
+.copyright-msg{
+    text-align: center;
+}
+
+.copyright-msg a{
+    color: #495e57;
+    text-decoration: none;
+    font-weight: bold;
+}
