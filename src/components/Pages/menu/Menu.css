@@ -23,9 +23,20 @@
 }
 
 .menu-category-header{
-    width: 200px;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.menu-category-header h1{
+    text-align: right;
 }
 
 .menu-category-list{
+    margin-left: 50px;
     width: 300px;
+    text-align: left;
+}
+
+.menu-category-list ul{
+    padding: 0;
 }
