@@ -57,7 +57,7 @@ function Footer(){
             </div>
             </div>
             </footer>
-            <p className="copyright-msg">Copyright © {getCurrentDate()} by <a href="https://github.com/tselane2110" target="_blank">Tanzeela Sehar</a> All Rights Reserved.</p>
+            <p className="copyright-msg">Copyright © {getCurrentDate()} by <a href="https://github.com/tselane2110" target="_blank" rel="noreferrer">Tanzeela Sehar</a> All Rights Reserved.</p>
         </>
     )
 }
