@@ -40,5 +40,10 @@ function submitAPI(formData) {
 
 }
 
-export {fetchAPI, submitAPI};
+
+function loginFormAPI(LoginData){
+    return true
+}
+
+export {fetchAPI, submitAPI, loginFormAPI};
 
