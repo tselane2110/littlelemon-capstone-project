@@ -6,7 +6,7 @@ function LoginForm(){
     return(
         <div className="form">
             <div className="form-size">
-
+                <></>
             </div>
         </div>
     )
