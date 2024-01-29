@@ -11,6 +11,8 @@ import BookingPage from "./components/Pages/booking-page/BookingPage";
 import ConfirmedBooking from "./components/Pages/confirmed-booking/ConfirmedBooking";
 import OrderOnline from "./components/Pages/OrderOnline/OrderOnline";
 import Login from "./components/Pages/Login/Login";
+import About from "./components/Pages/about/About";
+import Menu from "./components/Pages/menu/Menu";
 
 
 const router = createBrowserRouter([
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>
+  },
+  {
+    path: "/about",
+    element: <About/>
+  },
+  {
+    path: "/menu",
+    element: <Menu/>
   }
 ]);
 

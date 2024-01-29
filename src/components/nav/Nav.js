@@ -12,8 +12,8 @@ function Nav(){
                     <img className='icon-logo logoStyle' src={icon} alt='icon'/>
                 </Link>
                 <Link to="/" className='nav-link'>Home</Link>
-                <Link to="/" className='nav-link'>About</Link> 
-                <Link to="/" className='nav-link'>Menu</Link>
+                <Link to="/about" className='nav-link'>About</Link> 
+                <Link to="/menu" className='nav-link'>Menu</Link>
                 <Link to="/bookingPage" className='nav-link'>Reservations</Link>
                 <Link to="/orderOnline" className='nav-link'>Order Online</Link>
                 <Link to="/login" className='nav-link'>Login</Link>
