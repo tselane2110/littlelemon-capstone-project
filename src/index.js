@@ -11,7 +11,7 @@ import BookingPage from "./components/Pages/booking-page/BookingPage";
 import ConfirmedBooking from "./components/Pages/confirmed-booking/ConfirmedBooking";
 import OrderOnline from "./components/Pages/OrderOnline/OrderOnline";
 import Login from "./components/Pages/Login/Login";
-import About from "./components/Pages/about/About";
+import AboutPage from "./components/Pages/about/AboutPage";
 import Menu from "./components/Pages/menu/Menu";
 
 
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <About/>
+    element: <AboutPage/>
   },
   {
     path: "/menu",

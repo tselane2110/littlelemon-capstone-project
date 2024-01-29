@@ -1,0 +1,34 @@
+.timings{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; /* horizontally */
+    align-items: center; /* vertically */
+    padding-bottom: 65px;
+    padding-top: 65px;
+    background-color: #edefee;
+}
+
+.timings-size{
+    width: 1000px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.timings-header{
+    text-align: center;
+}
+
+.timings-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timings-body table, td, th{
+    border: 2px solid #333333;
+    border-collapse: collapse;
+    text-align: center;
+    width: 800px;
+}
