@@ -28,3 +28,9 @@
     transform: scale(2);
     margin-right: 100px;
 }
+
+
+.cart-img{
+    width: 70%;
+    height: 70%;
+}

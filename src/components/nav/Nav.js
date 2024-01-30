@@ -2,6 +2,7 @@ import React from 'react';
 import icon from '../../icons_assets/Logo.svg';
 import { Link } from 'react-router-dom';
 import "./nav.css";
+import cart_basket from "../../icons_assets/Basket.svg";
 
 function Nav(){
 
@@ -17,6 +18,9 @@ function Nav(){
                 <Link to="/bookingPage" className='nav-link'>Reservations</Link>
                 <Link to="/orderOnline" className='nav-link'>Order Online</Link>
                 <Link to="/login" className='nav-link'>Login</Link>
+                <Link className='nav-link'>
+                    <img src={cart_basket} alt='Cart' className='cart-img'></img>
+                </Link>
             </div>
         </div>
     );
