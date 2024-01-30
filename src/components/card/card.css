@@ -61,7 +61,8 @@
 .footer-img{
     height: 30px;
     width: 30px;
-    margin-left: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .footer-img img{
@@ -71,15 +72,19 @@
     height: auto;
 }
 
-.footer-title{
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.footer-title a{
-    text-decoration: none;
+.add-sub-btn button{
+    object-fit: cover;
     font-weight: bold;
-    color: #fbdabb;
+    font-size: 1em;
+    background-color: #edefee;
+    color: #333333;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
 }
 
+.add-sub-btn button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

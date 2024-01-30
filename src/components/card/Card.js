@@ -17,11 +17,14 @@ function Card(props){
                     <p>{props.about}</p>
                 </div>
                 <div className="card-footer">
-                    <div className="footer-title">
-                        <a href={props.link}>Order a delivery</a>
+                    <div className="subtract add-sub-btn">
+                        <button>-</button>
                     </div>
                     <div className="footer-img">
                         <img src={deliveryGuy} alt="guy bringing you food"></img>
+                    </div>
+                    <div className="add add-sub-btn">
+                        <button>+</button>
                     </div>
                 </div>
             </div>
