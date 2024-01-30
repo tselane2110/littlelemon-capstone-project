@@ -18,7 +18,7 @@ function Nav(){
                 <Link to="/bookingPage" className='nav-link'>Reservations</Link>
                 <Link to="/orderOnline" className='nav-link'>Order Online</Link>
                 <Link to="/login" className='nav-link'>Login</Link>
-                <Link className='nav-link'>
+                <Link className='nav-link' to="/cart">
                     <img src={cart_basket} alt='Cart' className='cart-img'></img>
                 </Link>
             </div>

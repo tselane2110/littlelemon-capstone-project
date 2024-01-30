@@ -13,6 +13,7 @@ import OrderOnline from "./components/Pages/OrderOnline/OrderOnline";
 import Login from "./components/Pages/Login/Login";
 import AboutPage from "./components/Pages/about/AboutPage";
 import Menu from "./components/Pages/menu/Menu";
+import Cart from "./components/Pages/cart/Cart";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/menu",
     element: <Menu/>
+  },
+  {
+    path: "/cart",
+    element: <Cart/>
   }
 ]);
 
