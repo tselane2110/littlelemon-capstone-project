@@ -9,8 +9,61 @@ import r1 from "../../icons_assets/r1.png";
 import "./main.css";
 import { Link } from "react-router-dom";
 import About from "../about/About.js";
+import { useState } from "react";
 
 function Main(){
+
+    const [cartItems, setCartItems] = useState([]);
+
+    const updateCart = (cart_item) =>{
+        const id = generateID();
+
+        // creating a new item object to append in the cartItems
+        const new_item = {
+            "id" : id,
+            "title" : cart_item["title"],
+            "price" : cart_item["price"],
+            "quantity" : cart_item["quantity"]
+        }
+
+        console.log("new item received by main: ", new_item);
+
+        // check if an item exists already
+        const itemExists = cartItems.some(obj => obj["title"] === cart_item["title"]);
+
+        if(cart_item["title"] === ""){
+            console.log("Cannot add a null object!");
+        }
+
+        else if (!itemExists){
+
+            // appending the new item object in the cartItems
+            setCartItems([...cartItems, new_item]);
+        }
+
+        else{
+
+            setCartItems(prevList => {
+
+                const existingObjectIndex = prevList.findIndex(obj => obj.title === cart_item["title"]);
+
+                if (existingObjectIndex !== -1) {
+                  // If the object with the same title exists, update its quantity
+                  const newList = [...prevList];
+                  newList[existingObjectIndex].quantity += cart_item["quantity"];
+                  newList[existingObjectIndex].price += cart_item["price"];
+                  return newList;
+                }
+              });
+        }
+
+        // printing the cartItems on console
+        console.log(cartItems);
+    }
+
+    const generateID = () =>{
+        return cartItems.length + 1;
+    }
 
     return(
         <div className="main-section">
@@ -50,6 +103,7 @@ function Main(){
                 price = "$12.99"
                 about = "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. "
                 link = ""
+                onItemClick = {updateCart}
                 />
                 <Card
                 img = {bruchetta}
@@ -57,6 +111,7 @@ function Main(){
                 price = "$5.99"
                 about = "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
                 link = ""
+                onItemClick = {updateCart}
                 />
                 <Card
                 img = {lemonDessert}
@@ -64,6 +119,7 @@ function Main(){
                 price = "$5.00"
                 about = "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
                 link = ""
+                onItemClick = {updateCart}
                 />
             </div>
             </div>
