@@ -1,6 +1,7 @@
 import React from "react";
 import icon from "../../icons_assets/Logo .svg";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 // get current date
 
@@ -28,12 +29,24 @@ function Footer(){
                     Doormat Navigation
                 </h5>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Reservations</li>
-                    <li>Order Online</li>
-                    <li>Login</li>
+                    <li>
+                        <Link to="/" className="doormat-nav">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about" className="doormat-nav">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/menu" className="doormat-nav">Menu</Link>
+                    </li>
+                    <li>
+                        <Link to="/bookingPage" className="doormat-nav">Reservations</Link>
+                    </li>
+                    <li>
+                        <Link to="/orderOnline" className="doormat-nav">Order Online</Link>
+                    </li>
+                    <li>
+                        <Link to="/login" className="doormat-nav">Login</Link>
+                    </li>
                 </ul>
             </div>
             <div className="col col2">
